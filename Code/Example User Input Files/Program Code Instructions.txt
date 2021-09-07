@@ -1,0 +1,65 @@
+Instructions for PHREEQC Code Creation
+1. Create a folder called "System Files" in the root of where you want everything to go
+Example:
+V:\\System Files\\
+2. Ensure this file folder has:
+- minteq.v4.dat database file (you can use another phreeqc database file, but make sure the code is modified
+- phreeqc_no_u_g exectutive application file
+
+2.
+- put in a #Species Name before each aqueous species logK equation. 
+- make sure there ARE NO SPACES AFTER THE NAME
+Example:
+#Pb(CO3)2-2
+Pb+2 + 2CO3-2 = Pb(CO3)2-2
+log_k 	9.938
+
+3.
+- put in a #Solid - solids Name before each solid species logK equation. 
+- make sure there are No Spaces after the name
+Example:
+#Solid - Cerrusite
+Cerrusite
+PbCO3 = Pb+2 + CO3-2
+log_k 	-13.13
+
+4.
+- put title and date as tabbed items. 
+Example: 
+TITLE 	Sensitivity Tests on LogKs of Pb 	May 27, 2015
+
+5.
+- ensure selected output is set, with a tab. 
+Example:
+SELECTED_OUTPUT
+-file 	Test.txt
+
+6.
+- ensure high precision is set as "true". 
+Example:
+-high_precision true
+
+7.
+- ensure #Condition is set before each solution/equilibirum phase. 
+- ensure there is a tab between everything
+- ensure there are no spaces after pH 8 (1 space between) or DIC 0 (but there is a tab there)
+Example:
+#Condition	1	pH 8	DIC 0
+SOLUTION 1
+pH 8
+pe 4        #left at default
+-units mol/L
+Na 0.01
+C 0
+N 0.01
+Br 0 Charge
+
+EQUILIBRIUM_PHASES 1
+Hydrocerrusite 0 10
+Cerrusite 0 0
+#Pb(OH)2 0 0
+#CO2(G) 0 0
+#O2(G) 0 0
+#Fix_H+ -8 NaOH 10
+#Fix_H+ -8 HCl 10
+End
