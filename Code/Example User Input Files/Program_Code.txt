@@ -1,0 +1,3395 @@
+DATABASE	minteq.v4.dat
+TITLE	Sensitivity Tests on LogKs of Pb 	May 27, 2015
+SELECTED_OUTPUT
+-file	Test.txt
+-high_precision true
+-simulation false
+-state false
+-solution false
+-distance false
+-time false
+-step false
+-pH true
+-totals Pb 
+-molalities H+ CO3-2 HCO3- Pb+2 Pb(CO3)2-2 PbCO3 PbHCO3+ PbOH+ Pb(OH)2 Pb(OH)3- Pb2OH+3 Pb3(OH)4+2 Pb(OH)4-2 Pb4(OH)4+4 PbNO3+ Pb(NO3)2
+-activities H+ CO3-2 HCO3- Pb(CO3)2-2 PbCO3 PbHCO3+ PbOH+ Pb(OH)2 Pb(OH)3- Pb2OH+3 Pb3(OH)4+2 Pb(OH)4-2 Pb4(OH)4+4 PbNO3+ Pb(NO3)2 
+-equilibrium_phases Cerrusite Hydrocerrusite	
+		
+PHASES		
+Fix_CO3-2		
+CO3-2 = CO3-2		
+log_k 	0	
+Fix_H+		
+H+ = H+		
+log_k 	0	
+Cerrusite		
+PbCO3 = Pb+2 + CO3-2		
+log_k 	-13.13	
+Hydrocerrusite		
+Pb3(OH)2(CO3)2 + 2H+ = 3Pb+2 + 2H2O + 2CO3-2		
+log_k 	-18.7705	
+		
+SOLUTION_SPECIES		
+#Pb(CO3)2-2		
+Pb+2 + 2CO3-2 = Pb(CO3)2-2		
+log_k 	9.938	
+#PbCO3		
+Pb+2 + CO3-2 = PbCO3		
+log_k 	6.478	
+#PbHCO3+		
+Pb+2 + CO3-2 + H+ = PbHCO3+		
+log_k 	13.2	
+#HYDROXIDES		
+#PbOH+		
+Pb+2 + H2O = PbOH+ + H+		
+log_k 	-7.597	
+#Pb(OH)2		
+Pb+2 + 2H2O = Pb(OH)2 + 2H+		
+log_k 	-17.094	
+#Pb(OH)3-		
+Pb+2 + 3H2O = Pb(OH)3- + 3H+		
+log_k 	-28.091	
+#Pb2OH+3		
+2Pb+2 + H2O = Pb2OH+3 + H+		
+log_k 	-6.397	
+#Pb3(OH)4+2		
+3Pb+2 + 4H2O = Pb3(OH)4+2 + 4H+		
+log_k 	-23.888	
+#Pb(OH)4-2		
+Pb+2 + 4H2O = Pb(OH)4-2 + 4H+		
+log_k 	-39.699	
+#Pb4(OH)4+4		
+4Pb+2 + 4H2O = Pb4(OH)4+4 + 4H+		
+log_k 	-19.988	
+#NITRATES		
+#PbNO3+		
+Pb+2 + NO3- = PbNO3+		
+log_k 	1.17	
+#Pb(NO3)2		
+Pb+2 + 2NO3- = Pb(NO3)2		
+log_k 	1.4	
+
+
+#Condition	pH 4	DIC 0
+SOLUTION 1		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 1		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 0
+SOLUTION 2		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 2		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 0
+SOLUTION 3		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 3		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 0
+SOLUTION 4		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 4		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 0
+SOLUTION 5		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 5		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 0
+SOLUTION 6		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 6		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 0
+SOLUTION 7		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 7		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 0
+SOLUTION 8		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 8		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 0
+SOLUTION 9		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 9		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 0
+SOLUTION 10		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 10		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 0
+SOLUTION 11		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 11		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 0
+SOLUTION 12		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 12		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 0
+SOLUTION 13		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 13		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 0
+SOLUTION 14		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 14		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 0
+SOLUTION 15		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01		
+C 0		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 15		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 5
+SOLUTION 16		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 16		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 5
+SOLUTION 17		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 17		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 5
+SOLUTION 18		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 18		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 5
+SOLUTION 19		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 19		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 5
+SOLUTION 20		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 20		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 5
+SOLUTION 21		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 21		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 5
+SOLUTION 22		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 22		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 5
+SOLUTION 23		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 23		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 5
+SOLUTION 24		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 24		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 5
+SOLUTION 25		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 25		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 5
+SOLUTION 26		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 26		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 5
+SOLUTION 27		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 27		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 5
+SOLUTION 28		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 28		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 5
+SOLUTION 29		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 29		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 5
+SOLUTION 30		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0104166666666667		
+C 0.000416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 30		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 10
+SOLUTION 31		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 31		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 10
+SOLUTION 32		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 32		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 10
+SOLUTION 33		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 33		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 10
+SOLUTION 34		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 34		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 10
+SOLUTION 35		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 35		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 10
+SOLUTION 36		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 36		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 10
+SOLUTION 37		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 37		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 10
+SOLUTION 38		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 38		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 10
+SOLUTION 39		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 39		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 10
+SOLUTION 40		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 40		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 10
+SOLUTION 41		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 41		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 10
+SOLUTION 42		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 42		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 10
+SOLUTION 43		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 43		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 10
+SOLUTION 44		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 44		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 10
+SOLUTION 45		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0108333333333333		
+C 0.000833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 45		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 15
+SOLUTION 46		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 46		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 15
+SOLUTION 47		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 47		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 15
+SOLUTION 48		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 48		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 15
+SOLUTION 49		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 49		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 15
+SOLUTION 50		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 50		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 15
+SOLUTION 51		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 51		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 15
+SOLUTION 52		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 52		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 15
+SOLUTION 53		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 53		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 15
+SOLUTION 54		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 54		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 15
+SOLUTION 55		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 55		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 15
+SOLUTION 56		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 56		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 15
+SOLUTION 57		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 57		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 15
+SOLUTION 58		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 58		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 15
+SOLUTION 59		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 59		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 15
+SOLUTION 60		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01125		
+C 0.00125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 60		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 20
+SOLUTION 61		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 61		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 20
+SOLUTION 62		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 62		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 20
+SOLUTION 63		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 63		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 20
+SOLUTION 64		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 64		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 20
+SOLUTION 65		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 65		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 20
+SOLUTION 66		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 66		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 20
+SOLUTION 67		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 67		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 20
+SOLUTION 68		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 68		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 20
+SOLUTION 69		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 69		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 20
+SOLUTION 70		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 70		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 20
+SOLUTION 71		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 71		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 20
+SOLUTION 72		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 72		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 20
+SOLUTION 73		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 73		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 20
+SOLUTION 74		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 74		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 20
+SOLUTION 75		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0116666666666667		
+C 0.00166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 75		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 35
+SOLUTION 76		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 76		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 35
+SOLUTION 77		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 77		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 35
+SOLUTION 78		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 78		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 35
+SOLUTION 79		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 79		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 35
+SOLUTION 80		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 80		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 35
+SOLUTION 81		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 81		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 35
+SOLUTION 82		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 82		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 35
+SOLUTION 83		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 83		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 35
+SOLUTION 84		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 84		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 35
+SOLUTION 85		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 85		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 35
+SOLUTION 86		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 86		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 35
+SOLUTION 87		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 87		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 35
+SOLUTION 88		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 88		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 35
+SOLUTION 89		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 89		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 35
+SOLUTION 90		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0129166666666667		
+C 0.00291666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 90		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 50
+SOLUTION 91		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 91		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 50
+SOLUTION 92		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 92		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 50
+SOLUTION 93		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 93		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 50
+SOLUTION 94		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 94		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 50
+SOLUTION 95		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 95		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 50
+SOLUTION 96		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 96		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 50
+SOLUTION 97		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 97		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 50
+SOLUTION 98		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 98		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 50
+SOLUTION 99		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 99		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 50
+SOLUTION 100		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 100		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 50
+SOLUTION 101		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 101		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 50
+SOLUTION 102		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 102		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 50
+SOLUTION 103		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 103		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 50
+SOLUTION 104		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 104		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 50
+SOLUTION 105		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0141666666666667		
+C 0.00416666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 105		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 75
+SOLUTION 106		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 106		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 75
+SOLUTION 107		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 107		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 75
+SOLUTION 108		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 108		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 75
+SOLUTION 109		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 109		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 75
+SOLUTION 110		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 110		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 75
+SOLUTION 111		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 111		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 75
+SOLUTION 112		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 112		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 75
+SOLUTION 113		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 113		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 75
+SOLUTION 114		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 114		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 75
+SOLUTION 115		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 115		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 75
+SOLUTION 116		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 116		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 75
+SOLUTION 117		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 117		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 75
+SOLUTION 118		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 118		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 75
+SOLUTION 119		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 119		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 75
+SOLUTION 120		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.01625		
+C 0.00625		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 120		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 100
+SOLUTION 121		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 121		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 100
+SOLUTION 122		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 122		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 100
+SOLUTION 123		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 123		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 100
+SOLUTION 124		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 124		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 100
+SOLUTION 125		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 125		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 100
+SOLUTION 126		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 126		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 100
+SOLUTION 127		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 127		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 100
+SOLUTION 128		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 128		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 100
+SOLUTION 129		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 129		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 100
+SOLUTION 130		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 130		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 100
+SOLUTION 131		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 131		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 100
+SOLUTION 132		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 132		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 100
+SOLUTION 133		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 133		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 100
+SOLUTION 134		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 134		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 100
+SOLUTION 135		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0183333333333333		
+C 0.00833333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 135		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 125
+SOLUTION 136		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 136		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 125
+SOLUTION 137		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 137		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 125
+SOLUTION 138		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 138		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 125
+SOLUTION 139		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 139		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 125
+SOLUTION 140		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 140		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 125
+SOLUTION 141		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 141		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 125
+SOLUTION 142		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 142		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 125
+SOLUTION 143		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 143		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 125
+SOLUTION 144		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 144		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 125
+SOLUTION 145		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 145		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 125
+SOLUTION 146		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 146		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 125
+SOLUTION 147		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 147		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 125
+SOLUTION 148		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 148		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 125
+SOLUTION 149		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 149		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 125
+SOLUTION 150		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0204166666666667		
+C 0.0104166666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 150		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 150
+SOLUTION 151		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 151		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 150
+SOLUTION 152		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 152		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 150
+SOLUTION 153		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 153		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 150
+SOLUTION 154		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 154		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 150
+SOLUTION 155		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 155		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 150
+SOLUTION 156		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 156		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7	DIC 150
+SOLUTION 157		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 157		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 150
+SOLUTION 158		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 158		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 150
+SOLUTION 159		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 159		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 150
+SOLUTION 160		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 160		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 150
+SOLUTION 161		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 161		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 150
+SOLUTION 162		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 162		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 150
+SOLUTION 163		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 163		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 150
+SOLUTION 164		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 164		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 150
+SOLUTION 165		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0225		
+C 0.0125		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 165		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4	DIC 200
+SOLUTION 166		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 166		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 4.5	DIC 200
+SOLUTION 167		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 167		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5	DIC 200
+SOLUTION 168		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 168		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 5.5	DIC 200
+SOLUTION 169		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 169		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6	DIC 200
+SOLUTION 170		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 170		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 6.5	DIC 200
+SOLUTION 171		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 171		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+
+#Condition	pH 7	DIC 200
+SOLUTION 172		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 172		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 7.5	DIC 200
+SOLUTION 173		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 173		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 8	DIC 200
+SOLUTION 174		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 174		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 8.5	DIC 200
+SOLUTION 175		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 175		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 9	DIC 200
+SOLUTION 176		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 176		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 9.5	DIC 200
+SOLUTION 177		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 177		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 10	DIC 200
+SOLUTION 178		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 178		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 10.5	DIC 200
+SOLUTION 179		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 179		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 11	DIC 200
+SOLUTION 180		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0266666666666667		
+C 0.0166666666666667		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 180		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 4	DIC 250
+SOLUTION 181		
+pH 4		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 181		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+
+
+#Condition	pH 4.5	DIC 250
+SOLUTION 182		
+pH 4.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 182		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 5	DIC 250
+SOLUTION 183		
+pH 5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 183		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+#Condition	pH 5.5	DIC 250
+SOLUTION 184		
+pH 5.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 184		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 6	DIC 250
+SOLUTION 185		
+pH 6		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 185		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+
+#Condition	pH 6.5	DIC 250
+SOLUTION 186		
+pH 6.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 186		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End
+
+
+#Condition	pH 7	DIC 250
+SOLUTION 187		
+pH 7		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 187		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 7.5	DIC 250
+SOLUTION 188		
+pH 7.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 188		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8	DIC 250
+SOLUTION 189		
+pH 8		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 189		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 8.5	DIC 250
+SOLUTION 190		
+pH 8.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 190		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9	DIC 250
+SOLUTION 191		
+pH 9		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 191		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 9.5	DIC 250
+SOLUTION 192		
+pH 9.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 192		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10	DIC 250
+SOLUTION 193		
+pH 10		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 193		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 10.5	DIC 250
+SOLUTION 194		
+pH 10.5		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 194		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
+		
+#Condition	pH 11	DIC 250
+SOLUTION 195		
+pH 11		
+pe 4        #left at default # Constant		
+-units mol/L # Constant		
+Na 0.0308333333333333		
+C 0.0208333333333333		
+N 0.01    # Constant		
+Br 0 Charge # Constant		
+		
+EQUILIBRIUM_PHASES 195		
+Hydrocerrusite 0 10 # Constant		
+Cerrusite 0 0 # Constant		
+#Fix_H+ -4 NaOH 10 # Constant		
+#Fix_H+ -4 HCl 10 # Constant		
+End		
