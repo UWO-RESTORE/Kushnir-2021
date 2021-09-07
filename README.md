@@ -1,5 +1,8 @@
-# Kushnir-2021
 # Exploring uncertainty in thermodynamic modeling of the lead carbonate aqueous system.
+Kushnir, C and Robinson, C.
+University of Western Ontario
+Published: 2021
+
 
 Everything you need to replicate the factorial run as described in Kushnir (2021) has been provided in /Code and /Code/Example User Files. This includes the phreeqc-no-gui.exe file that was used to run all the phreeqc files. 
 
